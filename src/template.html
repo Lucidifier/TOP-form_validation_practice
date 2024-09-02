@@ -9,29 +9,35 @@
   <section class="form_container">
     <form novalidate>
       <p class="inputs_email">
-        <label for="email">Enter your e-mail:</label>
-        <input type="email" name="email" id="email">
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" maxlength="30" placeholder="yourmail@mail.com" required>
+        <span class="input_error input_error_hidden"></span>
       </p>
       <p class="inputs_country">
-        <label for="country">Select your country:</label>
+        <label for="country">Select country:</label>
         <select name="country" id="country"> 
           <option value="1">1</option>
         </select>
+        <span class="input_error input_error_hidden"></span>
       </p>
       <p class="inputs_zipcode">
-        <label for="zipcode">Enter your ZIP code:</label>
+        <label for="zipcode">ZIP code:</label>
         <input type="text" name="zipcode" id="zipcode">
+        <span class="input_error input_error_hidden"></span>
       </p>
       <p class="inputs_password">
-        <label for="password">Enter your password:</label>
+        <label for="password">Password:</label>
         <input type="password" name="password" id="password">
+        <span class="input_error input_error_hidden"></span>
       </p>
       <p class="inputs_password_confirmation">
-        <label for="password_confirmation">Confirm your password:</label>
+        <label for="password_confirmation">Confirm password:</label>
         <input type="password" name="password_confirmation" id="password_confirmation">
+        <span class="input_error input_error_hidden"></span>
       </p>
       <p class="form_submit_button">
         <button>SUBMIT</button>
+        <span class="input_error input_error_hidden"></span>
       </p>
     </form>
   </section>
