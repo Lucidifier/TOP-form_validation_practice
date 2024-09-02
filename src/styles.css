@@ -22,6 +22,45 @@ img {
   height: auto;
 }
 
-body {
-  background-color: aqua;
+body
+
+
+.form_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+}
+
+form {
+  width: 30rem;
+  height: 32rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: grey;
+  padding: 2rem;
+  border: 0.5rem solid black;
+  border-radius: 1rem;
+}
+
+form > p {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+form input, form select {
+  width: 20rem;
+}
+
+form button {
+  width: 15rem;
+  height: 2rem;
+  background-color: yellow;
+  outline: none;
+  border: 0.2rem solid black;
 }

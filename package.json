@@ -1,7 +1,7 @@
 {
-  "name": "web_project_template",
+  "name": "form_validation",
   "version": "1.0.0",
-  "description": "Template repository for creating websites",
+  "description": "Form validation practice",
   "main": "index.js",
   "scripts": {
     "build": "webpack",

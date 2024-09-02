@@ -3,9 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Form Validation</title>
 </head>
 <body>
-  
+  <section class="form_container">
+    <form novalidate>
+      <p class="inputs_email">
+        <label for="email">Enter your e-mail:</label>
+        <input type="email" name="email" id="email">
+      </p>
+      <p class="inputs_country">
+        <label for="country">Select your country:</label>
+        <select name="country" id="country"> 
+          <option value="1">1</option>
+        </select>
+      </p>
+      <p class="inputs_zipcode">
+        <label for="zipcode">Enter your ZIP code:</label>
+        <input type="text" name="zipcode" id="zipcode">
+      </p>
+      <p class="inputs_password">
+        <label for="password">Enter your password:</label>
+        <input type="password" name="password" id="password">
+      </p>
+      <p class="inputs_password_confirmation">
+        <label for="password_confirmation">Confirm your password:</label>
+        <input type="password" name="password_confirmation" id="password_confirmation">
+      </p>
+      <p class="form_submit_button">
+        <button>SUBMIT</button>
+      </p>
+    </form>
+  </section>
 </body>
 </html>
