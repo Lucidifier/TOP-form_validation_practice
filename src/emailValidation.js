@@ -4,7 +4,7 @@ function validateEmail() {
   const emailError = document.querySelector('#email + span.input_error');
 
   function showEmailError() {
-    console.log('invalid');
+    console.log('invalid email');
     if(email.validity.valueMissing) {
       emailError.textContent = 'Please enter an email';
     } else if(email.validity.typeMismatch) {
@@ -16,7 +16,7 @@ function validateEmail() {
 
   email.addEventListener('input', (event) => {
     if(email.validity.valid) {
-      console.log('valid');
+      console.log('valid mail');
       emailError.textContent = '';
       emailError.classList.remove('input_error_active');
       emailError.classList.add('input_error_hidden');
