@@ -47,6 +47,22 @@ form {
   border-radius: 1rem;
 }
 
+.input_check:invalid {
+  outline: 2px solid red;
+}
+
+.input_check:valid {
+  outline: 2px solid green;
+}
+
+.input_check_valid {
+  outline: 2px solid green;
+}
+
+.input_check_invalid {
+  outline: 2px solid red;
+}
+
 form > p {
   display: flex;
   flex-direction: column;

@@ -15,6 +15,7 @@ function validateEmail() {
   }
 
   email.addEventListener('input', (event) => {
+    email.classList.add('input_check');
     if(email.validity.valid) {
       console.log('valid mail');
       emailError.textContent = '';

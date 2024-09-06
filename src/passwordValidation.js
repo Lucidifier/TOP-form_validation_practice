@@ -19,6 +19,7 @@ function validatePassword() {
   }
 
   password1.addEventListener('input', (event) => {
+    password1.classList.add('input_check');
     if(password1.validity.valid) {
       console.log('valid passwordOne');
       password1Error.textContent = '';
@@ -39,15 +40,28 @@ function validatePassword() {
   password2.addEventListener('input', (event) => {
     passwordTwoValue = password2.value;
     if(passwordOneValue != passwordTwoValue) {
+      password2.classList.remove('input_check_valid');
+      password2.classList.add('input_check_invalid');
       console.log('invalid passwordTwo');
       password2Error.textContent = 'Passwords must match';
       password2Error.classList.remove('input_error_hidden');
       password2Error.classList.add('input_error_active');
     } else {
       console.log('valid passwordTwo');
+      password2.classList.remove('input_check_invalid');
+      password2.classList.add('input_check_valid');
       password2Error.textContent = '';
       password2Error.classList.remove('input_error_active');
       password2Error.classList.add('input_error_hidden');
+    }
+  })
+
+  password1.addEventListener('blur', () => {
+    if(password2.value != password1.value) {
+      console.log('invalid passwordTwo');
+      password2Error.textContent = 'Passwords must match';
+      password2Error.classList.remove('input_error_hidden');
+      password2Error.classList.add('input_error_active');
     }
   })
 }

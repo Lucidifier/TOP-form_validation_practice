@@ -15,6 +15,7 @@ function validateZipcode() {
   }
 
   zipcode.addEventListener('input', (event) => {
+    zipcode.classList.add('input_check');
     if(zipcode.validity.valid) {
       console.log('valid zipcode');
       zipcodeError.textContent = '';
