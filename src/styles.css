@@ -71,6 +71,7 @@ form button {
 }
 
 .input_error {
+  max-width: 20rem;
   border: 0.2rem solid red;
   background-color: red;
   font-size: 80%;
